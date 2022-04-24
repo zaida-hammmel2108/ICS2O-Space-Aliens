@@ -7,23 +7,20 @@
 // This is the Phaser3 configuration file
 
 class SplashScene extends Phaser.Scene {
-  constructor () {
-    super ({ key: "splashScene" })
+  constructor() {
+    super({ key: "splashScene" });
   }
 
-
-  init (data) {
-    this.cameras.main.setBackgroundColor("#ffffff")
+  init(data) {
+    this.cameras.main.setBackgroundColor("#ffffff");
   }
 
-  preload () {
-    console.log("Splash Scene")
- }
-
-  create (data) {
+  preload() {
+    console.log("Splash Scene");
   }
 
-  update (time, delta) {
-  }
+  create(data) {}
+
+  update(time, delta) {}
 }
-  export default SplashScene
+export default SplashScene;
