@@ -4,9 +4,8 @@
 //
 // Created by: Zaida Hammel
 // Created on: April 2022
-// This is the Phaser3 configuration file
+// This is the splash scene
 
-/* Splash Scene */
 class SplashScene extends Phaser.Scene {
   constructor() {
     super({ key: "splashScene" });
