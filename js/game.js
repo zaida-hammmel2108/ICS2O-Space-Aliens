@@ -6,12 +6,17 @@
 // Created on: April 2022
 // This is the Phaser3 configuration file
 
+// This scene imports statements
 import SplashScene from "./splashScene.js";
+import TitleScene from "./titleScene.js"
 
 // Our game scene
 const splashScene = new SplashScene();
+const titleScene = new TitleScene();
 
-//* Game Scene */
+/** 
+ * Start Phaser Game.
+ */
 const config = {
   type: Phaser.AUTO,
   width: 1920,
@@ -26,15 +31,17 @@ const config = {
   backgroundColor: 0x5f6e7a,
   scale: {
     mode: Phaser.Scale.FIT,
-    // we place it in the middle of the page
+    // place it in the middle of the page
     autoCenter: Phaser.Scale.CENTER_BOTH,
   },
 };
 
 const game = new Phaser.Game(config);
+// console.log (game)
 
 // load scenes
-game.scene.add("splashScene", splashScene);
+game.scene.add("splashScene", splashScene)
+game.scene.add("titleScene", titleScene)
 
 // start title
 game.scene.start("splashScene");

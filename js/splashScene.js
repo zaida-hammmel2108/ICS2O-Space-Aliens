@@ -6,6 +6,9 @@
 // Created on: April 2022
 // This is the splash scene
 
+/**
+ * This class is the splash scene.
+ */
 class SplashScene extends Phaser.Scene {
   constructor() {
     super({ key: "splashScene" });
@@ -21,6 +24,8 @@ class SplashScene extends Phaser.Scene {
 
   create(data) {}
 
-  update(time, delta) {}
+  update(time, delta) {
+    this.scene.switch("titleScene")
+  }
 }
 export default SplashScene;
