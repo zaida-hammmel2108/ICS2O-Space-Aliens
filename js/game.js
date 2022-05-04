@@ -36,15 +36,15 @@ const config = {
     // place it in the middle of the page
     autoCenter: Phaser.Scale.CENTER_BOTH,
   },
-}
+};
 
-const game = new Phaser.Game(config)
+const game = new Phaser.Game(config);
 // console.log (game)
 
 // load scenes
-game.scene.add("splashScene", splashScene)
-game.scene.add("titleScene", titleScene)
-game.scene.add("menuScene", menuScene)
+game.scene.add("splashScene", splashScene);
+game.scene.add("titleScene", titleScene);
+game.scene.add("menuScene", menuScene);
 
 // start title
-game.scene.start("splashScene")
+game.scene.start("splashScene");
