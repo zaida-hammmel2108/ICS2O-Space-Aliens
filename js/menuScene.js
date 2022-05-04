@@ -8,29 +8,20 @@
 
 class MenuScene extends Phaser.Scene {
   constructor() {
-<<<<<<< HEAD
     super({ key: "menuScene" })
 
     this.menuSceneBackgroundImage = null
     this.startButton = null
-}
-=======
-    super({ key: "menuScene" });
   }
->>>>>>> origin/main
 
   init(data) {
     this.cameras.main.setBackgroundColor("ffffff");
   }
 
   preload() {
-<<<<<<< HEAD
     console.log("Menu Scene")
     this.load.image("menuSceneBackground", "assets/aliens_screen_image2.jpg")
     this.load.image("startButton", "assets/start.png")
-=======
-    console.log("Menu Scene");
->>>>>>> origin/main
   }
 
   create(data) {
