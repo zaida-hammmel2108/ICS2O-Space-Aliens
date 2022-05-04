@@ -6,16 +6,16 @@
 // Created on: April 2022
 // This is the Phaser3 configuration file
 
-import SplashScene from "./splashScene.js"
-import TitleScene from "./titleScene.js"
-import MenuScene from "./menuScene.js"
-import GameScene from "./gameScene.js"
+import SplashScene from "./splashScene.js";
+import TitleScene from "./titleScene.js";
+import MenuScene from "./menuScene.js";
+import GameScene from "./gameScene.js";
 
 // Our game scene
-const splashScene = new SplashScene()
-const titleScene = new TitleScene()
-const menuScene = new MenuScene()
-const gameScene = new GameScene()
+const splashScene = new SplashScene();
+const titleScene = new TitleScene();
+const menuScene = new MenuScene();
+const gameScene = new GameScene();
 
 /** Game Scene */
 const config = {
@@ -26,7 +26,7 @@ const config = {
     default: "arcade",
     arcade: {
       debug: true,
-    }
+    },
   },
   // set background color
   backgroundColor: 0x5f6e7a,
@@ -34,16 +34,16 @@ const config = {
     mode: Phaser.Scale.FIT,
     // place it in the middle of the page
     autoCenter: Phaser.Scale.CENTER_BOTH,
-  }
-}
+  },
+};
 
-const game = new Phaser.Game(config)
+const game = new Phaser.Game(config);
 
 // load scenes
-game.scene.add("splashScene", splashScene)
-game.scene.add("titleScene", titleScene)
-game.scene.add("menuScene", menuScene)
-game.scene.add("gameScene", gameScene)
+game.scene.add("splashScene", splashScene);
+game.scene.add("titleScene", titleScene);
+game.scene.add("menuScene", menuScene);
+game.scene.add("gameScene", gameScene);
 
 // start title
 game.scene.start("splashScene");
