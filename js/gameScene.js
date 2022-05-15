@@ -34,7 +34,7 @@ class GameScene extends Phaser.Scene {
 
     this.ship = this.physics.add.sprite(1920 / 2, 1080 - 100, "ship");
 
-    this.missileGroup = this.physics.addgroup{}
+    this.missileGroup = this.physics.add.group()
   }
 
   update(time, delta) {
@@ -56,11 +56,11 @@ class GameScene extends Phaser.Scene {
       }
     }
 
-    if (keySpaceObk.isDown === true {
+    if (keySpaceObj.isDown === true) {
       if (this.fireMissile === false) {
         this.fireMissile = true
-        const = aNewMissile = this.physics.add.sprite(this.ship.x, this.ship.y, "missile")
-        this.missileGroup.add{aNewMissile}
+        const aNewMissile = this.physics.add.sprite(this.ship.x, this.ship.y, "missile")
+        this.missileGroup.add(aNewMissile)
       }
     }
 
