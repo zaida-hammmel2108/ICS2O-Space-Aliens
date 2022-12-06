@@ -4,4 +4,4 @@
 
 [![Run on Repl.it](https://repl.it/badge/github/zaida-hammel/ICS2O-Space-Aliens)](https://repl.it/github/zaida-hammel/ICS2O-Space-Aliens)
 
-This site can be found at: [https://zaida-hammel.github.io/ICS2O-Space-Aliens](https://zaida-hammel.github.io/ICS2O-Space-Aliens)
+This site can be found at: [https://zaida-hammmel2108.github.io/ICS2O-Space-Aliens](https://zaida-hammel.github.io/ICS2O-Space-Aliens)
